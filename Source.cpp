@@ -243,6 +243,7 @@ public:
 		if (gameover)
 		{
 			DrawString({ 10, 250 }, decision, olc::WHITE);
+			DrawString({ 10, 260 }, "Press (R) to restart");
 		}
 		else
 		{
@@ -268,7 +269,7 @@ public:
 int main()
 {
 	ConnectFour game;
-	if (game.Construct(512, 480, 2, 2))
+	if (game.Construct(640, 360, 2, 2))
 	{
 		game.Start();
 	}
